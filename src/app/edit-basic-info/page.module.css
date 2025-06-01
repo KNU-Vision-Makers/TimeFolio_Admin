@@ -1,0 +1,267 @@
+    .background {
+        background-color: #DFE5DE;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .formRow {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #7E7E7E;
+        width: 20%;
+        margin-left: 50px;
+    }
+    
+    .input {
+        background-color: #FFFFFF;
+        border: 1.15px solid #7E7E7E;
+        border-radius: 8px;
+        font-size: 15px;
+        padding: 4px 8px;
+        width: 60%;
+        height: 2.5em;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .inputGroup {
+        display: flex;
+        gap: 3px;
+        width: 60%;
+    }
+    
+    /*
+    .inputSmall {
+        width : 33%;
+        background-color: #FFFFFF;
+        border: 1.15px solid #7E7E7E;
+        border-radius: 8px;
+        font-size: 15px;
+        padding: 4px 8px;
+        height: 2.5em;
+        box-sizing: border-box;
+        box-shadow: 0 3px 5px rgba(0, 49, 12, 0.2);
+    }
+    */
+
+    .inputSmall {
+        background-color: #FFFFFF;
+        border: 1.15px solid #7E7E7E;
+        border-radius: 8px;
+        font-size: 15px;
+        padding: 4px 8px;
+        width : 60%; /* 크기 조절 */
+        height: 2.5em;
+        box-sizing: border-box;
+        box-shadow: 0 3px 5px rgba(0, 49, 12, 0.2);
+        appearance: button; /* 기본 화살표 숨김 (원하면) */
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        text-align: center;
+    }
+
+    .selectWrapper::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="10" viewBox="0 0 24 24" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: translateY(-50%);
+    }
+    .centerText {  
+        text-align: center;
+    }
+
+    .inputGroup select {
+        max-height: 100px;
+        overflow-y: auto;
+    }
+    
+.input:focus,
+.inputSmall:focus,
+.emailInput:focus {
+  outline: none;
+  border-color: #4A752C;
+  box-shadow: 0 0 5px #426826;
+}
+
+
+
+    .inputGroup span {
+        margin: 0 3px;
+        font-weight: 200;  /* 얇게 */
+        font-size: 13px;
+        color: #7E7E7E;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        color: #4A752C;
+        margin-bottom: 20px;
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: center; /* 가운데 정렬 */
+        margin-top: 32px;        /* 위쪽 여백 */
+    }
+    
+    .saveButton {
+        background-color: #4A752C; /* 초록색 */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 12px 36px;      /* 기본 패딩 */
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 3px 7px rgba(0, 49, 12, 0.5);
+        transition: background-color 0.3s ease;
+        font-weight: 550;
+    }
+    
+    .saveButton:hover {
+        background-color: #324f1d; /* 살짝 진해짐 */
+    }
+
+    /* 전체 form 좌우 분할 레이아웃 추가 */
+    .contentRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    /* 왼쪽 입력 폼 */
+    .leftForm {
+        width: 60%;
+    }
+    
+    /* 오른쪽 사진 업로드 */
+    .photoUpload {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .previewImage {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+
+        font-size: 12px;
+        color: #7E7E7E;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .imagePreviewWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .previewText {
+        font-size: 12px;  /* 폰트 크기 줄임 */
+        color: #7E7E7E;
+        margin-bottom: 8px;
+    }
+    
+    .imagePreview {
+        width: 150px;    /* 고정 너비 */
+        height: auto;    /* 비율 유지 */
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* NATIONALITY와 GITHUB 사이 간격 더 넓게 하기 위한 클래스 */
+    .extraGap {
+        margin-top: 48px; /* 기본 formRow 간격 32px 보다 큼 */
+    }
+
+    .emailGroup {
+        display: flex;
+        gap: 6px;
+        width: 60%;
+      }
+      
+      .emailInput {
+        background-color: #FFFFFF;
+        border: 1.15px solid #7E7E7E;
+        border-radius: 8px;
+        font-size: 15px;
+        padding: 6px 10px;
+        width: 48%;
+        height: 2.5em;
+        box-sizing: border-box;
+        box-shadow: 0 3px 5px rgba(0, 49, 12, 0.2);
+        text-align: center;
+      }
+      
+      .emailAt {
+        align-self: center;
+        font-size: 16px;
+        color: #7E7E7E;
+        font-weight: 400;
+      }
+      
+.saveButton:disabled {
+    background-color: #5DB146; /* 저장 완료 시 연한 초록 */
+    cursor: not-allowed;
+    transition: background-color 0.3s ease;
+  }
+
+  .saveButton {
+    background-color: #4A752C;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: scale(1);
+  }
+  
+  .saveButtonPressed {
+    background-color: #1b2a10;
+    transform: scale(0.95);
+  }
+  

@@ -1,0 +1,41 @@
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eeeeee;
+}
+
+.inputbox {
+  display: flex;
+  width: 350px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.inputbox input {
+  border: 2.5px solid #7E7E7E;
+  border-radius: 10px;
+  width: 350px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inputbox input:focus {
+  border: 3px solid #4A752C;
+  outline: none;
+}
+
+.consentcheck {
+  font-family: 'sans-serif';
+  display: flex;
+  margin-top: 10px;
+}
+
+.consentcheck p {
+    font-size: 15px;
+    color: #7E7E7E;
+}

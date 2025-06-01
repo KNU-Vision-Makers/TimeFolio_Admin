@@ -1,0 +1,74 @@
+.techStackContainer {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.techList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.techItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.deleteButton:hover {
+  background-color: #e60000;
+}
+
+.addTechContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.inputField {
+  padding: 8px 10px;
+  font-size: 16px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.addButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 25%;
+  border: none;
+}
+
+.addButton:hover {
+  background-color: #45a049;
+}

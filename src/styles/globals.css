@@ -1,0 +1,247 @@
+ @font-face {
+    font-family: "Architex";
+    src: url("../../public/fonts/Architex.ttf");
+ }
+  @font-face {
+    font-family: "Cheap-Potatoes-Black";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black.ttf");
+  }
+   @font-face {
+    font-family: "Cheap-Potatoes-Black-Thin";
+    src: url("../../public/fonts/Cheap\ Potatoes\ Black\ Thin.ttf")
+ }
+
+ /* [Usage] color: var(--olive); */
+ :root {
+  --olive: #4A752C;
+}
+
+body {
+  margin: 0;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
+
+/* main page */
+.home-container {
+  display: flex;
+  width: 100%;
+}
+
+.home-main-container {
+  margin-left: 305px;
+  width: 100%;
+}
+
+/* sidebar */
+.side-bar{
+  position: fixed;
+  background-color: #DFE5DE;
+  width: 305px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar-button {
+  background: none;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #7E7E7E;
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+}
+
+.side-bar-button:active{
+  color:#4A752C;
+  font-weight: bolder;
+}
+
+.side-bar-login-button {
+  background: none;
+  border: none;
+  text-decoration-line: none;
+  margin-top: 150px;
+  margin-bottom: 5px;
+  color: var(--olive);
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+  text-align: center;
+}
+
+.side-bar-login-button:hover, .side-bar-signup-button:hover{
+  font-weight: bolder;
+  text-decoration-line: none;
+}
+
+.side-bar-signup-button {
+  background: none;
+  border: none;
+  text-decoration-line: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--olive);
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+  text-align: center;
+}
+
+.name-plate {
+  color: var(--olive);
+  line-height: 70px;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+/* time-line-page */
+.content-title-middle {
+    font-size : 50px;
+    text-align: center;
+    font-family: Cheap-Potatoes-Black-Thin, sans-serif;
+    font-weight : 900;
+    color: var(--olive);
+    margin-bottom : 126px;
+}
+
+.content-box {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(195,195,195,0.3) 8%, rgba(195,195,195,0.3) 50%, rgba(195,195,195,0.3) 92%, rgba(255,255,255,0.3) 100%);
+  padding: 50px;
+}
+
+
+.vertical-timeline-element-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.3rem;
+}
+
+/* .vertical-timeline-element-content {
+  max-width: 400px;
+} */
+
+
+.content-box {
+  padding: 20px; 
+}
+
+
+.vertical-timeline-element-subtitle {
+  font-weight: 400;
+  color: #c9c9c9;
+  font-size: 1rem;
+}
+
+
+
+.vertical-timeline-element--work:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.with-click .vertical-timeline-element--work:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/*same with up component*/
+.vertical-timeline-element-edit-add:hover{
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-timeline-element-edit-add {
+  text-align: center;
+}
+
+
+
+.vertical-timeline-element-edit-add .vertical-timeline-element-content {
+  min-height: 120px; /* 원하는 만큼 조절 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* 전역 스타일 */
+.techStackContainer {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.content-title-middle {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Cheap-Potatoes-Black-Thin', sans-serif;
+  color: var(--olive);
+  margin-bottom: 40px;
+}
+
+.techList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.techItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--background-white);
+  border-radius: 10px;
+  border: 2px solid var(--olive);
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.techItem:hover {
+  transform: scale(1.05); /* hover 시 아이템 크기 커짐 */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.techImage {
+  width: 40px; /* 이미지 크기 */
+  height: 40px;
+  margin-right: 15px;
+}
+
+.techName {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--olive);
+}
+
+/* login page */
+.logo {
+  color: var(--olive);
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* button - login, signup */
+.big-button {
+  margin-top: 30px;
+}
+
+.big-button button {
+  border: 3px solid #4A752C;
+  background-color: #4A752C;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  width: 350px;
+  height: 50px;
+}
+
+.big-button button:hover,
+.big-button button:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
