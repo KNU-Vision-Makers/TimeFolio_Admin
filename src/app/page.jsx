@@ -6,6 +6,7 @@ import BasicInfo from "@/components/BasicInfo";
 import Sidebar from "@/components/Sidebar";
 import TechStack from "@/components/TechStack";
 import TimeLine from "@/components/TimeLine";
+import Link from 'next/link';
 
 
 // 메인 페이지
@@ -21,9 +22,24 @@ export default function Home({children}) {
         <div className="home-container">
             <Sidebar sectionRefs={sectionRefs} />
             <div className="home-main-container">
-                <section ref={sectionRefs.Info}><BasicInfo/></section>
-                <section ref={sectionRefs.TimeLine}><TimeLine/></section>
-                <section ref={sectionRefs.TechStack}><TechStack/></section>
+                <section ref={sectionRefs.Info}>
+                    <BasicInfo/>
+                    <Link href="/edit-basic-info" className="edit-button">
+                    Edit
+                    </Link>
+                </section>
+                <section ref={sectionRefs.TimeLine}>
+                    <TimeLine/>
+                    <Link href="/edit-time-line" className="edit-button">
+                    Edit
+                    </Link>    
+                </section>
+                <section ref={sectionRefs.TechStack} style={{backgroundColor:"#f9f9f9"}}>
+                    <TechStack/>
+                    <Link href="/edit-tech-stack" className="edit-button">
+                    Edit
+                    </Link>
+                </section>
             </div>
         </div>
     )

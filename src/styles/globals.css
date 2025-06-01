@@ -83,6 +83,17 @@ body {
   text-align: center;
 }
 
+.side-bar-logout-button {
+  background: none;
+  border: none;
+  text-decoration-line: none;
+  margin-top: 200px;
+  margin-bottom: 5px;
+  color: var(--olive);
+  font-family : 'Cheap-Potatoes-Black-Thin', sans-serif;
+  text-align: center;
+}
+
 .name-plate {
   color: var(--olive);
   line-height: 70px;
@@ -244,4 +255,28 @@ body {
 .big-button button:hover,
 .big-button button:focus {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* edit button */
+.edit-button {
+  display: inline-block;
+  border: 3px solid #4A752C;
+  background-color: #FFFFFF;
+  color: #4A752C;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration:none;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  margin-left: 1070px;
+  margin-bottom: 20px;
+}
+
+.edit-button:hover,
+.edit-button:active {
+  background-color: #4A752C;
+  color: #FFFFFF;
 }
