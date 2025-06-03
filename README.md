@@ -21,7 +21,7 @@
 <img src="/public/images/screen/timeline.png" width="1000px">
 
 ### Main - Tech Stack  
-<img src="/public/images/screen/techstack.png" width="1000px">
+<img src="/public/images/screen/teckstack.png" width="1000px">
 
 ### Edit - Basic Information  
 <img src="/public/images/screen/edit_basicinfo.png" width="1000px">
