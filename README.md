@@ -15,19 +15,19 @@
 
 ## 실행 화면 : Admin 사이트
 ### Main - Basic Information  
-<img src="/public/images/Screen/basicinfo.png" width="1000px">
+<img src="/public/images/screen/basicinfo.png" width="1000px">
 
 ### Main - Time Line (학력, 수상, 프로젝트, 경력 등등)  
-<img src="/public/images/Screen/timeline.png" width="1000px">
+<img src="/public/images/screen/timeline.png" width="1000px">
 
 ### Main - Tech Stack  
-<img src="/public/images/Screen/techstack.png" width="1000px">
+<img src="/public/images/screen/techstack.png" width="1000px">
 
 ### Edit - Basic Information  
-<img src="/public/images/Screen/edit_basicinfo.png" width="1000px">
+<img src="/public/images/screen/edit_basicinfo.png" width="1000px">
 
 ### Edit - Time Line (학력, 수상, 프로젝트, 경력 등등)  
-<img src="/public/images/Screen/edit_timeline.png" width="1000px">
+<img src="/public/images/screen/edit_timeline.png" width="1000px">
 
 ### Edit - Tech Stack  
-<img src="/public/images/Screen/edit_techstack.png" width="1000px">
+<img src="/public/images/screen/edit_techstack.png" width="1000px">
